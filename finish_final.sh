@@ -1,3 +1,11 @@
+#!/bin/bash
+echo "🚀 Ejecutando finish_final.sh - Proyecto MxFalconSecMx al 100%"
+
+# 1️⃣ Crear carpetas necesarias
+mkdir -p assets/css assets/js assets/img
+
+# 2️⃣ Escribir CSS final
+cat > assets/css/style.css << 'CSS'
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family:'JetBrains Mono', monospace; background:#000; color:#fff; overflow-x:hidden; }
 
@@ -21,3 +29,28 @@ body { font-family:'JetBrains Mono', monospace; background:#000; color:#fff; ove
   .hero-text p { font-size:1rem; }
   .site-logo { width:100px; }
 }
+CSS
+
+# 3️⃣ Escribir JS para hamburger nav y año dinámico
+cat > assets/js/main.js << 'JS'
+document.addEventListener('DOMContentLoaded', () => {
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+    navToggle.setAttribute('aria-expanded', !expanded);
+    navMenu.hidden = expanded;
+  });
+
+  // Footer dinámico
+  const yearElem = document.getElementById('year');
+  if(yearElem) yearElem.textContent = new Date().getFullYear();
+});
+JS
+
+# 4️⃣ Reemplazar footer en index.html
+sed -i '/<footer>/,/<\/footer>/c\<footer>\n  <p>&copy; <span id="year"></span> Mario Falcon - MxFalconSecMx</p>\n</footer>' index.html
+
+# 5️⃣ Mensaje final
+echo "✅ finish_final.sh ejecutado correctamente. Ahora solo revisa tu web en navegador."

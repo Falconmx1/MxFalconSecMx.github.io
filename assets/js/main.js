@@ -1,7 +1,14 @@
-const toggle = document.getElementById('nav-toggle');
-const menu = document.getElementById('nav-menu');
-toggle.addEventListener('click', () => {
-  const expanded = toggle.getAttribute('aria-expanded') === 'true';
-  toggle.setAttribute('aria-expanded', !expanded);
-  menu.hidden = !menu.hidden;
+document.addEventListener('DOMContentLoaded', () => {
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+    navToggle.setAttribute('aria-expanded', !expanded);
+    navMenu.hidden = expanded;
+  });
+
+  // Footer dinámico
+  const yearElem = document.getElementById('year');
+  if(yearElem) yearElem.textContent = new Date().getFullYear();
 });
