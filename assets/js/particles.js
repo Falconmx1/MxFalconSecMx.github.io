@@ -1,2 +1,2 @@
-// Partículas simples
-console.log("🔥 Partículas listas para hero y animaciones");
+// JS de partículas
+console.log("Particles JS cargado");

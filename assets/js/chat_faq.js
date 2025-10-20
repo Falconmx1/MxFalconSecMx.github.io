@@ -1,2 +1,2 @@
-// JS de chat/FAQ/formulario
-console.log("✅ Chat, FAQ y Formulario cargados");
+// Chat, FAQ y Formulario
+console.log("Chat/FAQ/Form JS cargado");
