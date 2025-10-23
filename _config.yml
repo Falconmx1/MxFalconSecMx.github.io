@@ -1,0 +1,6 @@
+title: "MxFalconSecMx"
+description: "Ciberseguridad | Hacking Ético | Pentesting"
+url: "https://falconmx1.github.io/MxFalconSecMx.github.io/"
+theme: null
+plugins:
+  - jekyll-seo-tag
