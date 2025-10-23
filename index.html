@@ -1,110 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MxFalconSecMx - Inicio</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://falconmx1.github.io; script-src 'self' https://falconmx1.github.io; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MxFalconSecMx - Inicio</title>
+  <meta name="description" content="MxFalconSecMx | Ciberseguridad, Hacking Ético y Pentesting por Mario Falcón Hernández.">
+  <meta name="author" content="Mario Alberto Falcón Hernández">
+  <meta property="og:title" content="MxFalconSecMx - Hacking Ético y Ciberseguridad">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<section class="hero">
-  <img src="assets/img/hero.jpg" alt="Hero" class="hero-banner">
-  <div class="hero-text">
-    <h1>Bienvenido a MxFalconSecMx</h1>
-    <p>Hacking ético y ciberseguridad</p>
-    <a href="#about" class="btn">Conóceme</a>
+
+  <!-- Loader animado -->
+  <div id="loader">
+    <div class="spinner"></div>
   </div>
-</section>
 
-<main>
-  <section id="about">
-    <h2>Sobre Mí</h2>
-    <p>Proyectos, tutoriales y tips de ciberseguridad.</p>
+  <!-- Hero -->
+  <section class="hero fadeInUp">
+    <img src="assets/img/hero.jpg" alt="Hero" class="hero-banner">
+    <div class="hero-text">
+      <h1>Bienvenido a <span class="resaltado">MxFalconSecMx</span></h1>
+      <p>Hacking ético y ciberseguridad</p>
+      <a href="#about" class="btn">Conóceme</a>
+    </div>
   </section>
 
-  <section id="faq" class="faq-section">
-    <h2>FAQ</h2>
-    <p>Preguntas frecuentes dinámicas.</p>
-  </section>
+  <main>
+    <section id="about" class="fadeInUp">
+      <h2>Sobre Mí</h2>
+      <p>Proyectos, tutoriales y tips de ciberseguridad.</p>
+    </section>
 
-  <section id="chat" class="widget-chat">
-    <h2>Chat 24/7</h2>
-    <p>Asistente inteligente integrado.</p>
-  </section>
+    <section id="portfolio" class="fadeInUp">
+      <h2>Casos de éxito</h2>
+      <div class="portfolio-items">
+        <div class="item">
+          <img src="assets/img/portfolio/proyecto1.jpg" alt="Proyecto 1">
+          <h3>Proyecto 1</h3>
+          <p>Pruebas de pentesting web y reporte de vulnerabilidades.</p>
+        </div>
+        <div class="item">
+          <img src="assets/img/portfolio/proyecto2.jpg" alt="Proyecto 2">
+          <h3>Proyecto 2</h3>
+          <p>Simulación de ataque ético con resultados controlados.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact" class="form-inteligente">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Tu nombre">
-      <input type="email" placeholder="Tu correo">
-      <textarea placeholder="Tu mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-</main>
+    <section id="blog" class="fadeInUp">
+      <h2>Blog / Tips de Seguridad</h2>
+      <div class="blog-items">
+        <article>
+          <h3>Tip 1: Seguridad en Linux</h3>
+          <p>Refuerza tu entorno con hardening básico y permisos seguros.</p>
+          <a href="blog/articulo1.html" class="btn">Leer más</a>
+        </article>
+        <article>
+          <h3>Tip 2: Phishing y defensa</h3>
+          <p>Cómo identificar campañas maliciosas y proteger credenciales.</p>
+          <a href="blog/articulo2.html" class="btn">Leer más</a>
+        </article>
+      </div>
+    </section>
 
-<footer>
-  &copy; <script>document.write(new Date().getFullYear())</script> Mario Falcon - MxFalconSecMx
-</footer>
+    <section id="calculator" class="fadeInUp">
+      <h2>Calculadora de Riesgos</h2>
+      <input type="number" id="riskInput" placeholder="Nivel de riesgo (1-10)">
+      <button onclick="calcularRiesgo()" class="btn">Calcular</button>
+      <p id="riskOutput"></p>
+    </section>
 
-<script src="assets/js/particles.js" defer></script>
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/chat_faq.js" defer></script>
+    <section id="resources" class="fadeInUp">
+      <h2>Recursos Descargables</h2>
+      <a href="assets/downloads/guia.pdf" class="btn" download>Guía de Seguridad</a>
+      <a href="assets/downloads/checklist.pdf" class="btn" download>Checklist</a>
+    </section>
+
+    <section id="faq" class="fadeInUp">
+      <h2>FAQ</h2>
+      <p>Preguntas frecuentes dinámicas sobre hacking ético y ciberseguridad.</p>
+    </section>
+
+    <section id="chat" class="fadeInUp">
+      <h2>Chat 24/7</h2>
+      <p>Asistente inteligente integrado para consultas en tiempo real.</p>
+    </section>
+
+    <section id="contact" class="fadeInUp">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <script>document.write(new Date().getFullYear())</script> Mario Falcón - MxFalconSecMx
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/particles.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/chat_faq.js" defer></script>
+  <script src="assets/js/risk_calc.js" defer></script>
+  <script src="assets/js/blog.js" defer></script>
+
+  <!-- Script del loader -->
+  <script>
+    window.addEventListener("load", function(){
+      const loader = document.getElementById("loader");
+      loader.style.opacity = 0;
+      setTimeout(()=> loader.style.display = "none", 500);
+    });
+  </script>
+
 </body>
 </html>
-<!-- Secciones de ejemplo -->
-<section id='portfolio'><h2>Casos de éxito</h2><p>Proyectos aquí...</p></section>
-<div class='portfolio-item'>Proyecto 1</div><div class='portfolio-item'>Proyecto 2</div>
-<section id='blog'><h2>Blog / Tips de seguridad</h2><p>Artículos aquí...</p></section>
-<div class='blog-article'>Tip de seguridad 1</div><div class='blog-article'>Tip de seguridad 2</div>
-<section id='calculator'><h2>Calculadora de riesgos</h2><p>Mini herramienta aquí...</p></section>
-<div class='calculator-widget'>Calculadora placeholder</div>
-<section id='resources'><h2>Recursos descargables</h2><p>Descargas aquí...</p></section>
-<div class='resource-card'>Guía de seguridad PDF</div>
-<section id="portfolio">
-  <h2>Casos de éxito</h2>
-  <div class="portfolio-items">
-    <div class="item">
-      <img src="assets/img/portfolio/proyecto1.jpg" alt="Proyecto 1">
-      <h3>Proyecto 1</h3>
-      <p>Descripción breve del proyecto.</p>
-    </div>
-    <div class="item">
-      <img src="assets/img/portfolio/proyecto2.jpg" alt="Proyecto 2">
-      <h3>Proyecto 2</h3>
-      <p>Descripción breve del proyecto.</p>
-    </div>
-  </div>
-</section>
-<section id="blog">
-  <h2>Blog / Tips de seguridad</h2>
-  <div class="blog-items">
-    <article>
-      <h3>Tip de Seguridad 1</h3>
-      <p>Explicación breve del tip de seguridad.</p>
-      <a href="blog/articulo1.html" class="btn">Leer más</a>
-    </article>
-    <article>
-      <h3>Tip de Seguridad 2</h3>
-      <p>Explicación breve del tip de seguridad.</p>
-      <a href="blog/articulo2.html" class="btn">Leer más</a>
-    </article>
-  </div>
-</section>
-<section id="calculator">
-  <h2>Calculadora de Riesgos</h2>
-  <input type="number" id="riskInput" placeholder="Nivel de riesgo">
-  <button onclick="calcularRiesgo()" class="btn">Calcular</button>
-  <p id="riskOutput"></p>
-</section>
-<section id="resources">
-  <h2>Recursos descargables</h2>
-  <a href="assets/downloads/guia.pdf" class="btn" download>Guía de seguridad</a>
-  <a href="assets/downloads/checklist.pdf" class="btn" download>Checklist</a>
-</section>
-<!-- Secciones placeholders -->
-<section id='portfolio'><h2>portfolio</h2><p>Contenido aquí...</p></section>
-<section id='blog'><h2>blog</h2><p>Contenido aquí...</p></section>
-<section id='calculator'><h2>calculator</h2><p>Contenido aquí...</p></section>
-<section id='resources'><h2>resources</h2><p>Contenido aquí...</p></section>
+
