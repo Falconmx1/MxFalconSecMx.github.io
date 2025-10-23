@@ -2,7 +2,7 @@
 set -e
 echo "🚀 deploy_plus.sh - optimizar, minificar, commit y push"
 
-# 1) Ejecutar optimización (si tienes optimize_plus.sh)
+# 1) Ejecutar optimize_plus.sh
 if [ -f ./optimize_plus.sh ]; then
   echo "🔧 Ejecutando optimize_plus.sh ..."
   ./optimize_plus.sh
@@ -10,13 +10,10 @@ else
   echo "⚠️ optimize_plus.sh no encontrado. Saltando minify step."
 fi
 
-# 2) Asegurar archivos de build (minified) en uso si prefieres cambiar referencias
-# (Opcional: puedes implementar reemplazos aquí)
-
-# 3) Añadir y commitear
+# 2) Añadir todos los cambios y hacer commit
 git add .
-git commit -m "Deploy: optimize + content update $(date '+%Y-%m-%d %H:%M:%S')" || echo "⚠️ Nothing to commit"
+git commit -m "Deploy final FULL $(date '+%Y-%m-%d %H:%M:%S')" || echo "⚠️ Nada para commitear"
 
-# 4) Push a main
+# 3) Push vía SSH
 git push origin main
-echo "✅ Push completado. Comprueba GitHub Pages en Settings -> Pages"
+echo "✅ Push completado. Comprueba GitHub Pages en: https://falconmx1.github.io/MxFalconSecMx.github.io/"
