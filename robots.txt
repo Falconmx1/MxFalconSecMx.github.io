@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://falconmx1.github.io/MxFalconSecMx.github.io/sitemap.xml
