@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Mario Alberto Falcón Hernández">
+<meta name="description" content="MxFalconSecMx | Ciberseguridad, hacking ético y bug hunting desde México.">
+<!-- Meta tags SEO -->
+<meta name="description" content="MxFalconSecMx | Ciberseguridad, hacking ético y bug hunting desde México.">
+<meta name="author" content="Mario Alberto Falcón Hernández">
+<meta name="robots" content="index, follow">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MxFalconSecMx - Inicio</title>
+  <title>MxFalconSecMx</title>
 
-  <!-- SEO y Meta Tags -->
-  <meta name="description" content="MxFalconSecMx | Ciberseguridad, Hacking Ético y Pentesting por Mario Falcón Hernández.">
-  <meta name="author" content="Mario Alberto Falcón Hernández">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="MxFalconSecMx - Hacking Ético y Ciberseguridad">
-  <meta property="og:image" content="assets/img/og-image.jpg">
-
-  <!-- Sitemap y RSS -->
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-
-  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TQWPHF53S"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
     gtag('config', 'G-3TQWPHF53S');
   </script>
 
-  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://falconmx1.github.io; script-src 'self' https://falconmx1.github.io; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MxFalconSecMx - Inicio</title>
+  <meta name="description" content="MxFalconSecMx | Ciberseguridad, Hacking Ético y Pentesting por Mario Falcón Hernández.">
+  <meta name="author" content="Mario Alberto Falcón Hernández">
+  <meta property="og:title" content="MxFalconSecMx - Hacking Ético y Ciberseguridad">
+  <meta property="og:image" content="assets/img/og-image.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-
-  <!-- Content Security Policy si la usas -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://falconmx1.github.io; script-src 'self' https://falconmx1.github.io https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
 </head>
 <body>
 
@@ -128,19 +135,4 @@
   <!-- Scripts -->
   <script src="assets/js/particles.js" defer></script>
   <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/chat_faq.js" defer></script>
-  <script src="assets/js/risk_calc.js" defer></script>
-  <script src="assets/js/blog.js" defer></script>
-
-  <!-- Script del loader -->
-  <script>
-    window.addEventListener("load", function(){
-      const loader = document.getElementById("loader");
-      loader.style.opacity = 0;
-      setTimeout(()=> loader.style.display = "none", 500);
-    });
-  </script>
-
-</body>
-</html>
-
+  <script src="assets/js/
