@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://falconmx1.github.io/MxFalconSecMx.github.io/blog.html</loc><lastmod>2025-10-25</lastmod></url>
-  <url><loc>https://falconmx1.github.io/MxFalconSecMx.github.io/contact.html</loc><lastmod>2025-10-25</lastmod></url>
-  <url><loc>https://falconmx1.github.io/MxFalconSecMx.github.io/google52343b9d36f11317.html</loc><lastmod>2025-10-25</lastmod></url>
-  <url><loc>https://falconmx1.github.io/MxFalconSecMx.github.io/index.html</loc><lastmod>2025-10-25</lastmod></url>
-  <url><loc>https://falconmx1.github.io/MxFalconSecMx.github.io/portfolio.html</loc><lastmod>2025-10-25</lastmod></url>
-  <url><loc>https://falconmx1.github.io/MxFalconSecMx.github.io/tutorials.html</loc><lastmod>2025-10-25</lastmod></url>
+  <url>
+    <loc>https://falconmx1.github.io/MxFalconSecMx.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
 </urlset>
